@@ -22,6 +22,7 @@
 		3F9AF0C01A6F9DEA006C0916 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9AF09F1A6F9DEA006C0916 /* UIKit.framework */; };
 		3F9AF0C81A6F9DEA006C0916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F9AF0C61A6F9DEA006C0916 /* InfoPlist.strings */; };
 		3F9AF0CA1A6F9DEA006C0916 /* p4_tab_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF0C91A6F9DEA006C0916 /* p4_tab_appTests.m */; };
+		3F9AF0D51A6F9ECB006C0916 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF0D41A6F9ECB006C0916 /* ThirdViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		3F9AF0C51A6F9DEA006C0916 /* p4-tab-appTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "p4-tab-appTests-Info.plist"; sourceTree = "<group>"; };
 		3F9AF0C71A6F9DEA006C0916 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F9AF0C91A6F9DEA006C0916 /* p4_tab_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = p4_tab_appTests.m; sourceTree = "<group>"; };
+		3F9AF0D31A6F9ECB006C0916 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		3F9AF0D41A6F9ECB006C0916 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				3F9AF0B41A6F9DEA006C0916 /* SecondViewController.m */,
 				3F9AF0B61A6F9DEA006C0916 /* Images.xcassets */,
 				3F9AF0A21A6F9DEA006C0916 /* Supporting Files */,
+				3F9AF0D31A6F9ECB006C0916 /* ThirdViewController.h */,
+				3F9AF0D41A6F9ECB006C0916 /* ThirdViewController.m */,
 			);
 			path = "p4-tab-app";
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9AF0B51A6F9DEA006C0916 /* SecondViewController.m in Sources */,
+				3F9AF0D51A6F9ECB006C0916 /* ThirdViewController.m in Sources */,
 				3F9AF0AC1A6F9DEA006C0916 /* AppDelegate.m in Sources */,
 				3F9AF0B21A6F9DEA006C0916 /* FirstViewController.m in Sources */,
 				3F9AF0A81A6F9DEA006C0916 /* main.m in Sources */,
