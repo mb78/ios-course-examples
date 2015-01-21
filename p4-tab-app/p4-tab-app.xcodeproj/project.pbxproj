@@ -23,6 +23,9 @@
 		3F9AF0C81A6F9DEA006C0916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F9AF0C61A6F9DEA006C0916 /* InfoPlist.strings */; };
 		3F9AF0CA1A6F9DEA006C0916 /* p4_tab_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF0C91A6F9DEA006C0916 /* p4_tab_appTests.m */; };
 		3F9AF0D51A6F9ECB006C0916 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF0D41A6F9ECB006C0916 /* ThirdViewController.m */; };
+		3F9AF0D81A6FA162006C0916 /* FirstNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF0D71A6FA162006C0916 /* FirstNavViewController.m */; };
+		3F9AF0DB1A6FA172006C0916 /* SecondNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF0DA1A6FA172006C0916 /* SecondNavViewController.m */; };
+		3F9AF0DE1A6FA31D006C0916 /* ThirdNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF0DD1A6FA31D006C0916 /* ThirdNavViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,12 @@
 		3F9AF0C91A6F9DEA006C0916 /* p4_tab_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = p4_tab_appTests.m; sourceTree = "<group>"; };
 		3F9AF0D31A6F9ECB006C0916 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		3F9AF0D41A6F9ECB006C0916 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		3F9AF0D61A6FA162006C0916 /* FirstNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstNavViewController.h; sourceTree = "<group>"; };
+		3F9AF0D71A6FA162006C0916 /* FirstNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstNavViewController.m; sourceTree = "<group>"; };
+		3F9AF0D91A6FA172006C0916 /* SecondNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondNavViewController.h; sourceTree = "<group>"; };
+		3F9AF0DA1A6FA172006C0916 /* SecondNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondNavViewController.m; sourceTree = "<group>"; };
+		3F9AF0DC1A6FA31D006C0916 /* ThirdNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdNavViewController.h; sourceTree = "<group>"; };
+		3F9AF0DD1A6FA31D006C0916 /* ThirdNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdNavViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +130,12 @@
 				3F9AF0AA1A6F9DEA006C0916 /* AppDelegate.h */,
 				3F9AF0AB1A6F9DEA006C0916 /* AppDelegate.m */,
 				3F9AF0AD1A6F9DEA006C0916 /* Main.storyboard */,
+				3F9AF0DC1A6FA31D006C0916 /* ThirdNavViewController.h */,
+				3F9AF0DD1A6FA31D006C0916 /* ThirdNavViewController.m */,
+				3F9AF0D61A6FA162006C0916 /* FirstNavViewController.h */,
+				3F9AF0D71A6FA162006C0916 /* FirstNavViewController.m */,
+				3F9AF0D91A6FA172006C0916 /* SecondNavViewController.h */,
+				3F9AF0DA1A6FA172006C0916 /* SecondNavViewController.m */,
 				3F9AF0B01A6F9DEA006C0916 /* FirstViewController.h */,
 				3F9AF0B11A6F9DEA006C0916 /* FirstViewController.m */,
 				3F9AF0B31A6F9DEA006C0916 /* SecondViewController.h */,
@@ -261,9 +276,12 @@
 			files = (
 				3F9AF0B51A6F9DEA006C0916 /* SecondViewController.m in Sources */,
 				3F9AF0D51A6F9ECB006C0916 /* ThirdViewController.m in Sources */,
+				3F9AF0DE1A6FA31D006C0916 /* ThirdNavViewController.m in Sources */,
 				3F9AF0AC1A6F9DEA006C0916 /* AppDelegate.m in Sources */,
 				3F9AF0B21A6F9DEA006C0916 /* FirstViewController.m in Sources */,
+				3F9AF0DB1A6FA172006C0916 /* SecondNavViewController.m in Sources */,
 				3F9AF0A81A6F9DEA006C0916 /* main.m in Sources */,
+				3F9AF0D81A6FA162006C0916 /* FirstNavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
