@@ -1,18 +1,18 @@
 //
-//  ViewController.m
-//  p4
+//  SecondViewController.m
+//  p4-tab-app
 //
 //  Created by student on 21.01.15.
 //  Copyright (c) 2015 student. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SecondViewController.h"
 
-@interface ViewController ()
+@interface SecondViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SecondViewController
 
 - (void)viewDidLoad
 {

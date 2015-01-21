@@ -1,18 +1,18 @@
 //
-//  ViewController.m
-//  p4
+//  FirstViewController.m
+//  p4-tab-app
 //
 //  Created by student on 21.01.15.
 //  Copyright (c) 2015 student. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FirstViewController.h"
 
-@interface ViewController ()
+@interface FirstViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FirstViewController
 
 - (void)viewDidLoad
 {
