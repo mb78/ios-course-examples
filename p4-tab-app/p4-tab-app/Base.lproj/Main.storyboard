@@ -176,7 +176,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="2" id="7Q8-9e-2sj"/>
+                    <navigationItem key="navigationItem" title="2" id="7Q8-9e-2sj">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="trash" id="kMi-dN-4c1"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDn-Xx-kx7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
