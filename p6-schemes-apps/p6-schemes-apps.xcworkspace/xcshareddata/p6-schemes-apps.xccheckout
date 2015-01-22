@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>78838E7A-2240-4062-A701-96662EFB5A47</string>
+	<key>IDESourceControlProjectName</key>
+	<string>p6-schemes-apps</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B34C51A6-E03B-4313-A92C-A38AF129D01C</key>
+		<string>https://github.com/mb78/ios-course-examples.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>p6-schemes-apps/p6-schemes-apps.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B34C51A6-E03B-4313-A92C-A38AF129D01C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mb78/ios-course-examples.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B34C51A6-E03B-4313-A92C-A38AF129D01C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B34C51A6-E03B-4313-A92C-A38AF129D01C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ios-course-examples</string>
+		</dict>
+	</array>
+</dict>
+</plist>
