@@ -35,7 +35,7 @@
     [rom GET:@"http://www.root.cz" parameters:@{@"a":@"b"} success:^(AFHTTPRequestOperation* operation,id responseObject) {
         NSLog(@"Odpoved: %@",operation.responseString);
         NSNotificationCenter* nc=[NSNotificationCenter defaultCenter];
-        [nc postNotificationName:@"recvd" object:nil]; // userinfo=dictionary=data of notification
+        [nc postNotificationName:@"recvd" object:nil userInfo:@{@"info":@"ta"}]; // userinfo=dictionary=data of notification
     }failure:^(AFHTTPRequestOperation *operation,NSError* error) {
     }];
  
@@ -55,6 +55,12 @@
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     NSLog(error.localizedDescription);
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    NSNotificationCenter* nc=[NSNotificationCenter defaultCenter];
+    [nc postNotificationName:@"recvd" object:nil userInfo:@{@"info":@"web loaded"}]; // userinfo=dictionary=data of notification
+    
 }
 
 @end

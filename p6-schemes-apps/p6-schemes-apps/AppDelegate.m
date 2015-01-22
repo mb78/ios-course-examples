@@ -20,7 +20,7 @@
 }
 
 -(void)myNotifMessage:(NSNotification*)msg {
-    NSLog(@"ssss");
+    NSLog(@"ssss %@",[msg.userInfo objectForKey:@"info"]);
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
