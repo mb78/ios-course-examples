@@ -7,11 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "AFNetworking/AFHTTPRequestOperationManager.h"
 
 @interface ViewController () {
     
     __weak IBOutlet UIWebView *browser1;
     __weak IBOutlet UITextField *addr1;
+    AFHTTPRequestOperationManager* rom;
 }
 
 @end
@@ -21,10 +23,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    NSURL* url=[NSURL URLWithString:@"http://www.idnes.cz"];
-    NSURLRequest* req=[NSURLRequest requestWithURL:url];
-    [browser1 loadRequest:req];
+//	// Do any additional setup after loading the view, typically from a nib.
+//    NSURL* url=[NSURL URLWithString:@"http://www.idnes.cz"];
+//    NSURLRequest* req=[NSURLRequest requestWithURL:url];
+//    [browser1 loadRequest:req];
+    
+    NSLog(@"Odpoved: ");
+    rom=[AFHTTPRequestOperationManager manager];
+    rom.requestSerializer=[AFHTTPRequestSerializer serializer];
+    rom.responseSerializer=[AFHTTPResponseSerializer serializer];
+    [rom GET:@"http://www.root.cz" parameters:@{@"a":@"b"} success:^(AFHTTPRequestOperation* operation,id responseObject) {
+        NSLog(@"Odpoved: %@",operation.responseString);
+    }failure:^(AFHTTPRequestOperation *operation,NSError* error) {
+    }];
 }
 
 - (void)didReceiveMemoryWarning
