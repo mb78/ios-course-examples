@@ -28,7 +28,7 @@
 //    NSURLRequest* req=[NSURLRequest requestWithURL:url];
 //    [browser1 loadRequest:req];
     
-    NSLog(@"Odpoved: ");
+/*    NSLog(@"Odpoved: ");
     rom=[AFHTTPRequestOperationManager manager];
     rom.requestSerializer=[AFHTTPRequestSerializer serializer];
     rom.responseSerializer=[AFHTTPResponseSerializer serializer];
@@ -38,7 +38,10 @@
         [nc postNotificationName:@"recvd" object:nil userInfo:@{@"info":@"ta"}]; // userinfo=dictionary=data of notification
     }failure:^(AFHTTPRequestOperation *operation,NSError* error) {
     }];
- 
+ */
+    NSUserDefaults *ud=[NSUserDefaults standardUserDefaults];
+    NSLog(@"name_preference=%@",[ud objectForKey:@"name_preference"]);
+    
 }
 
 - (void)didReceiveMemoryWarning
