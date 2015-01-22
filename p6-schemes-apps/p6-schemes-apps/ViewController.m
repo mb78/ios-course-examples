@@ -34,8 +34,11 @@
     rom.responseSerializer=[AFHTTPResponseSerializer serializer];
     [rom GET:@"http://www.root.cz" parameters:@{@"a":@"b"} success:^(AFHTTPRequestOperation* operation,id responseObject) {
         NSLog(@"Odpoved: %@",operation.responseString);
+        NSNotificationCenter* nc=[NSNotificationCenter defaultCenter];
+        [nc postNotificationName:@"recvd" object:nil]; // userinfo=dictionary=data of notification
     }failure:^(AFHTTPRequestOperation *operation,NSError* error) {
     }];
+ 
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,8 +53,7 @@
     [browser1 loadRequest:req];
 }
 
-- (void)webView:(UIWebView *)webView
-didFailLoadWithError:(NSError *)error {
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     NSLog(error.localizedDescription);
 }
 

@@ -13,7 +13,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSNotificationCenter* nc=[NSNotificationCenter defaultCenter];
+    [nc addObserver:self selector:@selector(myNotifMessage:) name:@"recvd" object:nil];
     return YES;
+}
+
+-(void)myNotifMessage:(NSNotification*)msg {
+    NSLog(@"ssss");
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

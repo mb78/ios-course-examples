@@ -11,5 +11,5 @@
 @interface AppDelegate : UIResponder <UIWebViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+-(void)myNotifMessage:(NSNotification*)msg;
 @end
