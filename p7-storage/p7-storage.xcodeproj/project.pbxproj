@@ -27,6 +27,7 @@
 		3F9AF1A81A713EAD006C0916 /* p7_storageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF1A71A713EAD006C0916 /* p7_storageTests.m */; };
 		3F9AF1C61A7242A2006C0916 /* Mesto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF1C51A7242A2006C0916 /* Mesto.m */; };
 		3F9AF1C91A7242A2006C0916 /* Clovek.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF1C81A7242A2006C0916 /* Clovek.m */; };
+		3F9AF1CF1A7249C4006C0916 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F9AF1D11A7249C4006C0916 /* flag.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,12 @@
 		3F9AF1C51A7242A2006C0916 /* Mesto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesto.m; sourceTree = "<group>"; };
 		3F9AF1C71A7242A2006C0916 /* Clovek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clovek.h; sourceTree = "<group>"; };
 		3F9AF1C81A7242A2006C0916 /* Clovek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clovek.m; sourceTree = "<group>"; };
+		3F9AF1CA1A724882006C0916 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F9AF1CB1A724882006C0916 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		3F9AF1CC1A724882006C0916 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3F9AF1D01A7249C4006C0916 /* de */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = de; path = de.lproj/flag.png; sourceTree = "<group>"; };
+		3F9AF1D21A7249CD006C0916 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/flag.png; sourceTree = "<group>"; };
+		3F9AF1D31A7249D0006C0916 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/flag.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +158,7 @@
 		3F9AF17C1A713EAD006C0916 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F9AF1D11A7249C4006C0916 /* flag.png */,
 				3F9AF17D1A713EAD006C0916 /* p7-storage-Info.plist */,
 				3F9AF17E1A713EAD006C0916 /* InfoPlist.strings */,
 				3F9AF1811A713EAD006C0916 /* main.m */,
@@ -236,6 +244,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 3F9AF1671A713EAD006C0916;
 			productRefGroup = 3F9AF1711A713EAD006C0916 /* Products */;
@@ -254,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9AF1941A713EAD006C0916 /* Images.xcassets in Resources */,
+				3F9AF1CF1A7249C4006C0916 /* flag.png in Resources */,
 				3F9AF1801A713EAD006C0916 /* InfoPlist.strings in Resources */,
 				3F9AF1891A713EAD006C0916 /* Main.storyboard in Resources */,
 			);
@@ -307,6 +317,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3F9AF17F1A713EAD006C0916 /* en */,
+				3F9AF1CA1A724882006C0916 /* de */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -315,6 +326,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3F9AF1881A713EAD006C0916 /* Base */,
+				3F9AF1CB1A724882006C0916 /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -323,8 +335,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				3F9AF1A51A713EAD006C0916 /* en */,
+				3F9AF1CC1A724882006C0916 /* de */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3F9AF1D11A7249C4006C0916 /* flag.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9AF1D01A7249C4006C0916 /* de */,
+				3F9AF1D21A7249CD006C0916 /* en */,
+				3F9AF1D31A7249D0006C0916 /* Base */,
+			);
+			name = flag.png;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

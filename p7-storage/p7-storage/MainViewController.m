@@ -27,12 +27,12 @@
     context=delegate.managedObjectContext;
     
     Mesto* brno1=[NSEntityDescription insertNewObjectForEntityForName:@"Mesto" inManagedObjectContext:context];
-    brno1.meno=@"Brno";
+    brno1.meno=NSLocalizedString(@"Brno",nil);
     
     Clovek* clovek1=[NSEntityDescription insertNewObjectForEntityForName:@"Clovek" inManagedObjectContext:context];
     clovek1.meno=@"frantapepa1";
     clovek1.vek=20;
-//    clovek1.bydlisko=brno1;
+    clovek1.bydlisko=brno1;
     NSError *error=nil;
     [context save:&error];
     
@@ -44,7 +44,7 @@
     req.sortDescriptors=@[sd1,sd2];
     NSArray *people=[context executeFetchRequest:req error:&error];
     for (Clovek* clovek in people) {
-        NSLog(@"meno=%@, vek=%d",clovek.meno,clovek.vek);
+        NSLog(@"meno=%@, vek=%d, bydlisko=%@",clovek.meno,clovek.vek,clovek.bydlisko.meno);
     }
     [context deleteObject:clovek1];
 }
