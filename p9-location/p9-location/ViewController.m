@@ -26,6 +26,8 @@
     lm.desiredAccuracy=5; // meters
     lm.distanceFilter=5; // default:±0
     [lm startUpdatingLocation];
+    lm.headingFilter=5;
+    [lm startUpdatingHeading];
 }
 
 - (void)didReceiveMemoryWarning
