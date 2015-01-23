@@ -20,19 +20,30 @@
                                 <rect key="frame" x="20" y="20" width="280" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.13086555480000001" green="0.44089673909999999" blue="0.068571153060000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.90782099179999998" green="0.71510234939999995" blue="0.65065150959999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.13086555480000001" green="0.44089673909999999" blue="0.068571153060000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="shadowColor" red="0.98727792000000003" green="1" blue="0.51223946330000003" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="l2W-3b-qJE" appends="YES" id="Zho-Yw-WmF"/>
+                                </connections>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="label1" destination="fxm-tV-lFF" id="9aN-fD-2HT"/>
+                        <outlet property="pangr1" destination="l2W-3b-qJE" id="utn-iA-RVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="l2W-3b-qJE">
+                    <connections>
+                        <action selector="panDetected:" destination="vXZ-lx-hvc" id="VSH-lw-C3Z"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="k5E-dl-Qh7"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
         </scene>
     </scenes>
