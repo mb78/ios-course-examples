@@ -12,6 +12,7 @@
     
     __weak IBOutlet UILabel *label1;
     NSOperationQueue* queue1;
+    NSMutableArray* array1;
 }
 
 @end
@@ -23,6 +24,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     queue1=[[NSOperationQueue alloc] init];
+    array1=[[NSMutableArray alloc] init];
     NSBlockOperation* op1=[NSBlockOperation blockOperationWithBlock:^{
         int c=0;
         while (YES) {
@@ -32,6 +34,9 @@
             c++;
             if (c==10) break;
             [NSThread sleepForTimeInterval:1];
+            @synchronized(array1) {
+                [array1 addObject:s];
+            }
         }
     }];
     NSBlockOperation* op2=[NSBlockOperation blockOperationWithBlock:^{
@@ -47,6 +52,9 @@
             }];
             c++;
             [NSThread sleepForTimeInterval:1];
+            @synchronized(array1) {
+                [array1 addObject:s];
+            }
         }
     }];
 //    [op2 addDependency:op1];
