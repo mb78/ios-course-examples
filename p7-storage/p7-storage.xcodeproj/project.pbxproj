@@ -25,8 +25,8 @@
 		3F9AF19E1A713EAD006C0916 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9AF1791A713EAD006C0916 /* CoreData.framework */; };
 		3F9AF1A61A713EAD006C0916 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F9AF1A41A713EAD006C0916 /* InfoPlist.strings */; };
 		3F9AF1A81A713EAD006C0916 /* p7_storageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF1A71A713EAD006C0916 /* p7_storageTests.m */; };
-		3F9AF1B31A7141DB006C0916 /* Mesto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF1B21A7141DB006C0916 /* Mesto.m */; };
-		3F9AF1B61A7141DB006C0916 /* Clovek.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF1B51A7141DB006C0916 /* Clovek.m */; };
+		3F9AF1C61A7242A2006C0916 /* Mesto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF1C51A7242A2006C0916 /* Mesto.m */; };
+		3F9AF1C91A7242A2006C0916 /* Clovek.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9AF1C81A7242A2006C0916 /* Clovek.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,10 +63,11 @@
 		3F9AF1A31A713EAD006C0916 /* p7-storageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "p7-storageTests-Info.plist"; sourceTree = "<group>"; };
 		3F9AF1A51A713EAD006C0916 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F9AF1A71A713EAD006C0916 /* p7_storageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = p7_storageTests.m; sourceTree = "<group>"; };
-		3F9AF1B11A7141DB006C0916 /* Mesto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesto.h; sourceTree = "<group>"; };
-		3F9AF1B21A7141DB006C0916 /* Mesto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesto.m; sourceTree = "<group>"; };
-		3F9AF1B41A7141DB006C0916 /* Clovek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clovek.h; sourceTree = "<group>"; };
-		3F9AF1B51A7141DB006C0916 /* Clovek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clovek.m; sourceTree = "<group>"; };
+		3F9AF1C31A724010006C0916 /* p7_storage 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "p7_storage 2.xcdatamodel"; sourceTree = "<group>"; };
+		3F9AF1C41A7242A2006C0916 /* Mesto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesto.h; sourceTree = "<group>"; };
+		3F9AF1C51A7242A2006C0916 /* Mesto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mesto.m; sourceTree = "<group>"; };
+		3F9AF1C71A7242A2006C0916 /* Clovek.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clovek.h; sourceTree = "<group>"; };
+		3F9AF1C81A7242A2006C0916 /* Clovek.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clovek.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,10 +139,10 @@
 				3F9AF1911A713EAD006C0916 /* FlipsideViewController.m */,
 				3F9AF1931A713EAD006C0916 /* Images.xcassets */,
 				3F9AF18A1A713EAD006C0916 /* p7_storage.xcdatamodeld */,
-				3F9AF1B41A7141DB006C0916 /* Clovek.h */,
-				3F9AF1B51A7141DB006C0916 /* Clovek.m */,
-				3F9AF1B11A7141DB006C0916 /* Mesto.h */,
-				3F9AF1B21A7141DB006C0916 /* Mesto.m */,
+				3F9AF1C71A7242A2006C0916 /* Clovek.h */,
+				3F9AF1C81A7242A2006C0916 /* Clovek.m */,
+				3F9AF1C41A7242A2006C0916 /* Mesto.h */,
+				3F9AF1C51A7242A2006C0916 /* Mesto.m */,
 				3F9AF17C1A713EAD006C0916 /* Supporting Files */,
 			);
 			path = "p7-storage";
@@ -273,10 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9AF1B31A7141DB006C0916 /* Mesto.m in Sources */,
 				3F9AF1861A713EAD006C0916 /* AppDelegate.m in Sources */,
 				3F9AF18C1A713EAD006C0916 /* p7_storage.xcdatamodeld in Sources */,
-				3F9AF1B61A7141DB006C0916 /* Clovek.m in Sources */,
+				3F9AF1C61A7242A2006C0916 /* Mesto.m in Sources */,
+				3F9AF1C91A7242A2006C0916 /* Clovek.m in Sources */,
 				3F9AF1821A713EAD006C0916 /* main.m in Sources */,
 				3F9AF1921A713EAD006C0916 /* FlipsideViewController.m in Sources */,
 				3F9AF18F1A713EAD006C0916 /* MainViewController.m in Sources */,
@@ -499,9 +500,10 @@
 		3F9AF18A1A713EAD006C0916 /* p7_storage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				3F9AF1C31A724010006C0916 /* p7_storage 2.xcdatamodel */,
 				3F9AF18B1A713EAD006C0916 /* p7_storage.xcdatamodel */,
 			);
-			currentVersion = 3F9AF18B1A713EAD006C0916 /* p7_storage.xcdatamodel */;
+			currentVersion = 3F9AF1C31A724010006C0916 /* p7_storage 2.xcdatamodel */;
 			path = p7_storage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Clovek" representedClassName="Clovek" syncable="YES">
+        <attribute name="attr1" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="meno" attributeType="String" maxValueString="10" indexed="YES" syncable="YES"/>
         <attribute name="vek" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
         <relationship name="bydlisko" maxCount="1" deletionRule="Nullify" destinationEntity="Mesto" inverseName="obyvatelia" inverseEntity="Mesto" syncable="YES"/>
@@ -10,7 +11,7 @@
         <relationship name="obyvatelia" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Clovek" inverseName="bydlisko" inverseEntity="Clovek" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Clovek" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Clovek" positionX="-63" positionY="-18" width="128" height="103"/>
         <element name="Mesto" positionX="304" positionY="-18" width="128" height="73"/>
     </elements>
 </model>
